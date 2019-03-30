@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display</title>
+</head>
+<body>
+{% for d in data %}
+<table border=1>
+	<tr><td>{{ d.srollno }}</td><td>{{ d.sname }}</td><td>{{ d.scity }}</td>
+		<td><a href="update">Update</a></td><td><a href="delete?rno={{ d.srollno }}">Delete</a></td></tr>
+</table>
+{%endfor%}
+</body>
+</html>
